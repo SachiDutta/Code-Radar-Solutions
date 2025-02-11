@@ -2,8 +2,8 @@
 
 int main(){
     string word;
-    scanf("%s",&b);
-    printf("You entered: %s",b);
+    scanf("%s",&word);
+    printf("You entered: %s",word);
     
     return 0;
 }
