@@ -2,6 +2,6 @@
 int main(){
     int a,b,c;
     scanf("%d\n %d\n %d\n",&a,&b,&c);
-    print("Average: %d",(a+b+c)/3);
+    print("Average: %f",(a+b+c)/3);
     return 0;
 }
