@@ -1,27 +1,16 @@
 #include <stdio.h>
 
-void rotateRight(int arr[], int n, int k) {
-    k = k % n;  // Handle cases where k > n
-    int temp[k];
-
-    // Store last k elements in temp
-    for (int i = 0; i < k; i++) {
-        temp[i] = arr[n - k + i];
+int isSorted(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            return 0;  // Not sorted
+        }
     }
-
-    // Shift remaining elements to the right
-    for (int i = n - 1; i >= k; i--) {
-        arr[i] = arr[i - k];
-    }
-
-    // Copy back k elements from temp to the front
-    for (int i = 0; i < k; i++) {
-        arr[i] = temp[i];
-    }
+    return 1;  // Sorted
 }
 
 int main() {
-    int n, k;
+    int n;
     scanf("%d", &n);
     int arr[n];
 
@@ -29,14 +18,18 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    scanf("%d", &k);
-
-    rotateRight(arr, n, k);
-
-    // Print output with each element in a new line
+    // Print each number on a new line (as in the image)
     for (int i = 0; i < n; i++) {
         printf("%d\n", arr[i]);
     }
 
+    // Check if the array is sorted
+    if (isSorted(arr, n)) {
+        printf("Sorted\n");
+    } else {
+        printf("Not Sorted\n");
+    }
+
     return 0;
 }
+
