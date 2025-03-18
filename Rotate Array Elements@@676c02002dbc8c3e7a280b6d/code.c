@@ -29,7 +29,7 @@ void printArray(int arr[], int n) {
 
 int main() {
     int n, k;
-    scanf("%d", &n);  // Read array size
+    scanf("%d\n", &n);  // Read array size
     int arr[n];
     
     for (int i = 0; i < n; i++) {
