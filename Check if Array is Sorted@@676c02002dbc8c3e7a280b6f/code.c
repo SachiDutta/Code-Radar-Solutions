@@ -19,9 +19,9 @@ int main() {
     }
 
     // Print each number on a new line (as in the image)
-    for (int i = 0; i < n; i++) {
-        printf("%d\n", arr[i]);
-    }
+    for (int i = 0; i < n; i++) 
+      
+    
 
     // Check if the array is sorted
     if (isSorted(arr, n)) {
