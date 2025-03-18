@@ -18,11 +18,6 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    // Print each number on a new line (as in the image)
-    for (int i = 0; i < n; i++) 
-      
-    
-
     // Check if the array is sorted
     if (isSorted(arr, n)) {
         printf("Sorted\n");
@@ -32,4 +27,5 @@ int main() {
 
     return 0;
 }
+
 
