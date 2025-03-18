@@ -19,17 +19,16 @@ void rotateArray(int arr[], int n, int k) {
     reverse(arr, k, n - 1);     // Step 3: Reverse remaining N-K elements
 }
 
-// Function to print the array
+// Function to print the array (each number in a new line)
 void printArray(int arr[], int n) {
     for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
+        printf("%d\n", arr[i]);  // Print each element in a new line
     }
-    printf("\n");
 }
 
 int main() {
     int n, k;
-    scanf("%d\n", &n);  // Read array size
+    scanf("%d", &n);  // Read array size
     int arr[n];
     
     for (int i = 0; i < n; i++) {
