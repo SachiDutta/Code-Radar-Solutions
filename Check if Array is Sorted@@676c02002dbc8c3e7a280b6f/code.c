@@ -3,10 +3,10 @@
 int isSorted(int arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
         if (arr[i] > arr[i + 1]) {
-            return 0;  // Not sorted
+            return 0;  
         }
     }
-    return 1;  // Sorted
+    return 1; 
 }
 
 int main() {
@@ -18,7 +18,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    // Check if the array is sorted
+    
     if (isSorted(arr, n)) {
         printf("Sorted\n");
     } else {
