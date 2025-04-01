@@ -10,8 +10,8 @@ int isPrime(int num) {
 
 
 void printPrimesInRange(int a, int b) {
-      if (start < 2) {
-        start = 2;
+      if (a < 2) {
+        a = 2;
     }
     
     int (num = a; num <= b; num++) {
