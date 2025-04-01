@@ -9,9 +9,9 @@ int isPrime(int num) {
 }
 
 
-void printPrimesInRange(int start, int end) {
+void printPrimesInRange(int a, int b) {
     
-    for (int num = start; num <= end; num++) {
+    for (int num = a; num <= b; num++) {
         if (isPrime(num)) {
             printf("%d ", num);
         }
