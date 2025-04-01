@@ -1,5 +1,5 @@
 int fibonacciSeries(int num, int a, int b) {
-    if (num == 0) return;
+    if (num == 0) return 0;
     printf("%d ", a); 
     fibonacciSeries(num - 1, b, a + b); 
 }
