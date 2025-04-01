@@ -1,7 +1,7 @@
-int fibonacciSeries(int n){
-    if(n==0)
+int fibonacciSeries(int num){
+    if(num==0)
     return 0;
-    if(n==1)
+    if(num==1)
     return 1;
-    return fibonacciSeries(n-1) + fibonacciSeries(n-2);
+    return fibonacciSeries(num-1) + fibonacciSeries(num-2);
 }
