@@ -1,16 +1,12 @@
+int fibonacci(int num) {
+    if (num == 0) return 0; 
+    if (num == 1) return 1;  
+    return fibonacci(num - 1) + fibonacci(num - 2);  
+}
 
-void fibonacciSeries(int num) {
-    static int a = 0, b = 1;  
-    static int count = 0;     
-    
-    if (count == num)  
-        return;
 
-    printf("%d ", a);   // Print the current Fibonacci number
-    int next = a + b;   // Calculate next Fibonacci number
-    a = b;              // Shift values
-    b = next;
-    count++;            // Increase counter
-
-    fibonacciSeries(num);  // Recursive call
+void fibonacciSeries(int n) {
+    for (int i = 0; i < n; i++) {
+        printf("%d ", fibonacci(i));  
+    }
 }
