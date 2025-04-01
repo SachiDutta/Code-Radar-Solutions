@@ -7,13 +7,12 @@ void selectionSort(string arr[],int n){
             }
              }
              if(min!=i){
-                int temp=arr[i];
-                arr[i]=arr[min];
-                arr[min]=temp;
+                
+                swap(arr[i],arr[min]);
              }
     }
 }
-void printArray(char arr[],int n){
+void printArray(string arr[],int n){
     for(int i=0;i<n;i++){
         printf("%s ",arr[i]);
     }
