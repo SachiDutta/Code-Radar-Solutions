@@ -1,8 +1,8 @@
-void selectionSort(int arr[],int n){
-    for(int i=0;i<n-1;i++){
+void selectionSort(int arr[],int num){
+    for(int i=0;i<num-1;i++){
         int min=i;
       
-        for(int j=i+1;j<n;j++){
+        for(int j=i+1;j<num;j++){
             if(arr[j]<arr[min]){
                 min =j;
             }
@@ -15,7 +15,7 @@ void selectionSort(int arr[],int n){
     }
 }
 int kthSmallest(int arr[], int n, int k) {
-    selectionSort(arr, n); 
+    selectionSort(arr, num); 
     return arr[k - 1]; 
 }
 
