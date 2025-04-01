@@ -16,7 +16,7 @@ void selectionSort(int arr[],int n){
 }
 int kthSmallest(int arr[], int n, int k) {
     if (k <= 0 || k > n) {
-        printf("Invalid value of k\n");
+        
         return -1;
     }
     selectionSort(arr, n); 
