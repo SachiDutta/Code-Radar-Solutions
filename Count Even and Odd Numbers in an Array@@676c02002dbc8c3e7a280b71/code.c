@@ -9,12 +9,17 @@ void countEvenOdd(int arr[], int n) {
             oddCount++;
         }
     }
-    printf("Even count: %d, Odd count: %d\n", evenCount, oddCount);
+    printf("%d %d", evenCount, oddCount);
 }
 
 int main() {
-    int arr[] = {1, 2, 3, 4, 5, 6};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int n;
+    scanf("%d",&n);
+    int arr[];
+    for(int i=0;i<n;i++){
+    scanf("%d",&arr[i]);
+    }
+ 
     countEvenOdd(arr, n);
     return 0;
 }
