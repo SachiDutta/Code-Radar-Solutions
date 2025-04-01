@@ -6,10 +6,10 @@ void selectionSort(string arr[],int n){
                 min=j;
             }
              }
-             if(min!=i){
+            
                 
                 swap(arr[i],arr[min]);
-             }
+             
     }
 }
 void printArray(string arr[],int n){
