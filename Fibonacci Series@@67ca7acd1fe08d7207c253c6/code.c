@@ -1,7 +1,5 @@
-int fibonacciSeries(int num){
-    if(num==0)
-    return 0;
-    if(num==1)
-    return 1;
-    return fibonacciSeries(num-1) + fibonacciSeries(num-2);
+void fibonacciSeries(int num, int a, int b) {
+    if (num == 0) return;
+    printf("%d ", a); 
+    fibonacciSeries(num - 1, b, a + b); 
 }
